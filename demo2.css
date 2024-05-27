@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    background:url('movie4.jpg');
+    background-size:cover;
+    
+}
+.rating-css{
+    height:200px;
+    width:300px;
+    background:rgb(3, 10, 9);
+    border:2px solid white;
+    border-radius: 10px;
+    padding:20px;
+}
+.rating-css div{
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',' Geneva', Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.rating-css input{
+    display:none;
+
+}
+.rating-css label{
+    color :brown;
+}
+.rating-css input+label{
+    font-size: 50px;
+    text-shadow: 1px 1px 0 white ;
+    cursor:pointer;
+}
+.rating-css input:checked +label ~label{
+color: transparent;
+}
+.rating-css label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
